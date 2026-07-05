@@ -19,4 +19,4 @@ workspace-first model, each in its own tmux session + Git worktree. Notable
 supply-chain default — repo-supplied `.amux/workspaces.json` scripts are
 trust-gated before execution. Very early (v0.0.19, solo maintainer, no Windows).
 
-Full report: [`../amux/summary.md`](../amux/summary.md).
+Full report: [`../projects/amux/summary.md`](../projects/amux/summary.md).

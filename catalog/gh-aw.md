@@ -19,4 +19,4 @@ Actions that run AI agents (Copilot / Claude / Codex / Gemini) with a read-only
 default + sanitized `safe-outputs` write path. The most estate-relevant of the
 three seed projects — it's the reference design for *safe agentic CI*.
 
-Full report: [`../gh-aw/summary.md`](../gh-aw/summary.md).
+Full report: [`../projects/gh-aw/summary.md`](../projects/gh-aw/summary.md).

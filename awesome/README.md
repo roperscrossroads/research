@@ -3,7 +3,7 @@
 
 Curated, per-category lists of projects — generated from `catalog/` by `scripts/build-catalog.py`.
 
-3 project(s) across 7 categor(y/ies).
+3 projects across 7 categories.
 
 - [Agent Orchestration](agent-orchestration.md) — 1
 - [Agentic Ci](agentic-ci.md) — 1

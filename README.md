@@ -10,25 +10,28 @@ software, then kept as a durable, browsable record.
 
 ## What's in here
 
-Content is organised **one directory per subject**, using a lowercase slug,
-plus a top-level `comparisons/` directory for reports that span several
-projects:
+Reports live in a small, fixed set of top-level directories so the repo root
+stays clean as the number of projects grows:
 
 ```
-<project-slug>/
-├── summary.md              # structured project/tool summary
-├── security.md             # public-sources security posture review
-└── qa/
-    └── YYYY-MM-DD-topic.md  # a batch of questions with cited answers
+projects/                    # per-project reports, one dir per project
+└── <slug>/
+    ├── summary.md            # structured project/tool summary
+    ├── security.md           # public-sources security posture review
+    └── qa/
+        └── YYYY-MM-DD-topic.md   # a batch of questions with cited answers
 
-comparisons/
-└── <topic-or-projects>.md   # 2–4 projects compared side by side
+topics/                      # research not about a single project
+└── <slug>/ …
+
+comparisons/                 # 2–4 projects compared side by side
+└── <topic-or-projects>.md
 ```
 
 For example:
 
 ```
-nextcloud/
+projects/nextcloud/
 ├── summary.md
 ├── security.md
 └── qa/

@@ -84,6 +84,10 @@ def _fmt(v) -> str:
     return ", ".join(v) if isinstance(v, list) else str(v)
 
 
+def _plural(n: int, singular: str, plural: str) -> str:
+    return f"{n} {singular if n == 1 else plural}"
+
+
 def render_category(cat: str, entries: list[dict]) -> str:
     rows = ["| Project | Summary | Features | Status |", "|---|---|---|---|"]
     for e in sorted(entries, key=lambda x: x.get("repo", "")):
@@ -96,7 +100,7 @@ def render_category(cat: str, entries: list[dict]) -> str:
         GEN_MARKER,
         f"# {category_title(cat)}",
         "",
-        f"{len(entries)} project(s).",
+        f"{_plural(len(entries), 'project', 'projects')}.",
         "",
         *rows,
         "",
@@ -116,7 +120,10 @@ def render_readme(by_cat: dict) -> str:
         lines += ["_No catalog entries yet. Add one from `templates/catalog-entry.md`._", ""]
         return "\n".join(lines)
     total = len({e["repo"] for entries in by_cat.values() for e in entries})
-    lines.append(f"{total} project(s) across {len(by_cat)} categor(y/ies).")
+    lines.append(
+        f"{_plural(total, 'project', 'projects')} across "
+        f"{_plural(len(by_cat), 'category', 'categories')}."
+    )
     lines.append("")
     for cat in sorted(by_cat):
         lines.append(f"- [{category_title(cat)}]({category_slug(cat)}.md) — {len(by_cat[cat])}")
