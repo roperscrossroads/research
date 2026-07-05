@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How this repo works
+    url: https://github.com/roperscrossroads/research/blob/main/AGENTS.md
+    about: Scope rules and layout for reports (public sources only).

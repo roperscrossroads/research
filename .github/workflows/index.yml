@@ -1,0 +1,24 @@
+---
+# Fail if INDEX.md is stale (a report was added/changed without regenerating).
+# Mirrors the estate's generate-check pattern: deterministic, no bot commits —
+# the publishing agent runs `python3 scripts/build-index.py` and includes the
+# updated INDEX.md in its PR.
+name: "Index up to date"
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  index:
+    name: Check INDEX.md
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Verify the index is current
+        run: python3 scripts/build-index.py --check
