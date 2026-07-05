@@ -3,4 +3,12 @@
 
 Curated, per-category lists of projects — generated from `catalog/` by `scripts/build-catalog.py`.
 
-_No catalog entries yet. Add one from `templates/catalog-entry.md`._
+3 project(s) across 7 categor(y/ies).
+
+- [Agent Orchestration](agent-orchestration.md) — 1
+- [Agentic Ci](agentic-ci.md) — 1
+- [Ci Automation](ci-automation.md) — 1
+- [Desktop App](desktop-app.md) — 1
+- [Developer Tools](developer-tools.md) — 2
+- [Parallel Coding Agents](parallel-coding-agents.md) — 2
+- [Tui](tui.md) — 1
