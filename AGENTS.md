@@ -76,6 +76,21 @@ comparisons/
 
 Use the templates in [`templates/`](templates/) verbatim as a starting point.
 
+## Project catalog
+
+`catalog/<slug>.md` holds one machine-readable record per project (frontmatter:
+`repo, url, summary, categories[], features[], tags[], status, interest[],
+watch_*`) — see `templates/catalog-entry.md`. The unique key is `repo`; one entry
+per project (never create a second entry for the same repo). `status` is one of
+`watching · evaluating · adopted · rejected · archived`.
+
+The per-category lists in `awesome/` are **generated** from these records by
+`scripts/build-catalog.py` — never hand-edit `awesome/`. After adding or editing
+a `catalog/` entry, run `python3 scripts/build-catalog.py` and include the
+updated `awesome/` files in the same PR; CI (`catalog.yml`) fails if they are
+stale or orphaned. The catalog is public — public projects and public metadata
+only.
+
 ## Frontmatter (required)
 
 Every report opens with YAML frontmatter so it can be indexed by machine:
