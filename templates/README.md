@@ -5,9 +5,9 @@ directory and fill it in.
 
 | Template | Use for | Lands at |
 |---|---|---|
-| [`project-summary.md`](project-summary.md) | A structured summary of a project or tool | `<slug>/summary.md` |
-| [`security-review.md`](security-review.md) | A public-sources security posture review | `<slug>/security.md` |
-| [`qa.md`](qa.md) | A batch of questions with cited answers | `<slug>/qa/YYYY-MM-DD-topic.md` |
+| [`project-summary.md`](project-summary.md) | A structured summary of a project or tool | `projects/<slug>/summary.md` |
+| [`security-review.md`](security-review.md) | A public-sources security posture review | `projects/<slug>/security.md` |
+| [`qa.md`](qa.md) | A batch of questions with cited answers | `projects/<slug>/qa/YYYY-MM-DD-topic.md` |
 | [`comparison.md`](comparison.md) | 2–4 projects compared side by side | `comparisons/<topic-or-projects>.md` |
 | [`catalog-entry.md`](catalog-entry.md) | A machine-readable project record (drives the awesome lists) | `catalog/<slug>.md` |
 

@@ -20,4 +20,4 @@ and branch. Pulls tickets from Linear/GitHub/Jira/GitLab/**Forgejo**/etc.
 Local-first (SQLite), YC W26. A human-driver workstation tool, not server-side
 automation.
 
-Full report: [`../emdash/summary.md`](../emdash/summary.md).
+Full report: [`../projects/emdash/summary.md`](../projects/emdash/summary.md).

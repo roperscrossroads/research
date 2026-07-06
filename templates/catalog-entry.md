@@ -16,7 +16,7 @@ watch_stars: 0
 
 Longer notes about the project — what it does, why it's on the radar, how it
 compares to alternatives. Link to a full report if one exists
-(e.g. `../owner-name/summary.md`).
+(e.g. `../projects/owner-name/summary.md`).
 
 Frontmatter field notes:
 

@@ -50,21 +50,28 @@ that as a blocking question, not a judgement call.
 
 ## Layout
 
-One directory per subject (lowercase-kebab slug), plus a top-level
-`comparisons/` directory:
+Reports live under a small, fixed set of top-level directories (each subject is a
+lowercase-kebab slug) so the repo root stays clean as projects accumulate:
 
 ```
-<project-slug>/
+projects/<slug>/            # per-project reports
 ├── summary.md
 ├── security.md
 └── qa/
     └── YYYY-MM-DD-topic.md
 
+topics/<slug>/              # research not about a single project
+└── summary.md …
+
 comparisons/
 └── <topic-or-projects>.md
 ```
 
-- `<project-slug>` — the project/tool/topic, e.g. `nextcloud`, `paperless-ngx`.
+- `projects/<slug>/` — the subject **is** a specific project/repo, e.g.
+  `projects/nextcloud/`, `projects/paperless-ngx/`. `<slug>` is the short name
+  (usually the repo name); disambiguate as `owner-name` only on a real collision.
+- `topics/<slug>/` — the subject is **not** a single repo (a concept, pattern, or
+  cross-cutting question). Same report files and frontmatter as `projects/`.
 - `summary.md` — one per subject; overwrite/update in place as understanding
   improves.
 - `security.md` — one per subject; a public-sources security posture review.
