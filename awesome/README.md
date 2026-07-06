@@ -3,12 +3,19 @@
 
 Curated, per-category lists of projects — generated from `catalog/` by `scripts/build-catalog.py`.
 
-3 projects across 7 categories.
+7 projects across 14 categories.
 
-- [Agent Orchestration](agent-orchestration.md) — 1
+- [Agent Framework](agent-framework.md) — 1
+- [Agent Memory](agent-memory.md) — 1
+- [Agent Orchestration](agent-orchestration.md) — 3
+- [Agent Platform](agent-platform.md) — 1
 - [Agentic Ci](agentic-ci.md) — 1
 - [Ci Automation](ci-automation.md) — 1
+- [Coding Agents](coding-agents.md) — 1
 - [Desktop App](desktop-app.md) — 1
-- [Developer Tools](developer-tools.md) — 2
+- [Developer Tools](developer-tools.md) — 5
+- [Issue Tracker](issue-tracker.md) — 1
+- [Multi Agent](multi-agent.md) — 1
 - [Parallel Coding Agents](parallel-coding-agents.md) — 2
 - [Tui](tui.md) — 1
+- [Workflow Engine](workflow-engine.md) — 1
