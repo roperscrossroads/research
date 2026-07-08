@@ -7,9 +7,9 @@ Each record carries the project's `categories`, `features`, `tags`, `status`,
 and `watch_*` freshness fields. The unique key is `repo` (`owner/name`) — one
 entry per project.
 
-The per-category **awesome lists** in [`../awesome/`](../awesome/) are
+The per-category **category lists** in [`../categories/`](../categories/) are
 **generated** from these records by `scripts/build-catalog.py`; after adding or
 editing an entry, run `python3 scripts/build-catalog.py` and include the updated
-`awesome/` files in the same PR (CI fails if they are stale).
+`categories/` files in the same PR (CI fails if they are stale).
 
 > This directory is public. Only public projects and public metadata belong here.

@@ -1,9 +1,9 @@
 ---
-# Fail if the awesome/ lists are stale (a catalog/ entry changed without
+# Fail if the categories/ lists are stale (a catalog/ entry changed without
 # regenerating). Same deterministic pattern as index.yml — no bot commits; the
 # publishing agent runs `python3 scripts/build-catalog.py` and includes the
-# updated awesome/ files in its PR.
-name: "Awesome lists up to date"
+# updated categories/ files in its PR.
+name: "Category lists up to date"
 
 on:
   pull_request:
@@ -16,9 +16,9 @@ permissions:
 
 jobs:
   catalog:
-    name: Check awesome/
+    name: Check categories/
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Verify the awesome lists are current
+      - name: Verify the category lists are current
         run: python3 scripts/build-catalog.py --check

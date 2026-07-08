@@ -9,7 +9,7 @@ directory and fill it in.
 | [`security-review.md`](security-review.md) | A public-sources security posture review | `projects/<slug>/security.md` |
 | [`qa.md`](qa.md) | A batch of questions with cited answers | `projects/<slug>/qa/YYYY-MM-DD-topic.md` |
 | [`comparison.md`](comparison.md) | 2–4 projects compared side by side | `comparisons/<topic-or-projects>.md` |
-| [`catalog-entry.md`](catalog-entry.md) | A machine-readable project record (drives the awesome lists) | `catalog/<slug>.md` |
+| [`catalog-entry.md`](catalog-entry.md) | A machine-readable project record (drives the category lists) | `catalog/<slug>.md` |
 
 Each template opens with the required YAML frontmatter (`subject`, `type`,
 `title`, `date`, `sources`, `generated-by`) — keep it and fill it in; `INDEX.md`
