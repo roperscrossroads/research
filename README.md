@@ -45,19 +45,19 @@ Templates for every format live in [`templates/`](templates/). Every report
 carries YAML frontmatter, and [`INDEX.md`](INDEX.md) — a browsable table of all
 reports — is generated from it. See [`AGENTS.md`](AGENTS.md) for the details.
 
-## Project catalog & awesome lists
+## Project catalog & category lists
 
 Alongside the reports, [`catalog/`](catalog/) holds **machine-readable project
 records** — one file per project (`catalog/<slug>.md`) with structured
 frontmatter (`categories`, `features`, `tags`, `status`, `watch_*`). From those,
-`scripts/build-catalog.py` generates the per-category **awesome lists** in
-[`awesome/`](awesome/):
+`scripts/build-catalog.py` generates the per-category **category lists** in
+[`categories/`](categories/):
 
 ```
 catalog/
 └── <slug>.md            # one project record (see templates/catalog-entry.md)
 
-awesome/
+categories/
 ├── README.md            # generated index of categories
 └── <category>.md        # generated list of projects in that category
 ```

@@ -1,7 +1,7 @@
 ---
 repo: owner/name
 url: https://example.com
-summary: One-line description of what this project is (shown in the awesome lists).
+summary: One-line description of what this project is (shown in the category lists).
 categories: [category-a, category-b]
 features: [feature-one, feature-two, feature-three]
 tags: [language, runtime]
@@ -22,7 +22,7 @@ Frontmatter field notes:
 
 - **repo** — `owner/name` (the unique key; one catalog entry per repo).
 - **url** — homepage or repo URL.
-- **summary** — a single line; this is what appears in the generated awesome lists.
+- **summary** — a single line; this is what appears in the generated category lists.
 - **categories** — one or more; a project is listed under *each* of its categories.
 - **features** — capability tags — the point of the catalog ("categorise by feature set").
 - **tags** — free tags (language, runtime, etc.).

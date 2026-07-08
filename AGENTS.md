@@ -91,10 +91,10 @@ watch_*`) — see `templates/catalog-entry.md`. The unique key is `repo`; one en
 per project (never create a second entry for the same repo). `status` is one of
 `watching · evaluating · adopted · rejected · archived`.
 
-The per-category lists in `awesome/` are **generated** from these records by
-`scripts/build-catalog.py` — never hand-edit `awesome/`. After adding or editing
+The per-category lists in `categories/` are **generated** from these records by
+`scripts/build-catalog.py` — never hand-edit `categories/`. After adding or editing
 a `catalog/` entry, run `python3 scripts/build-catalog.py` and include the
-updated `awesome/` files in the same PR; CI (`catalog.yml`) fails if they are
+updated `categories/` files in the same PR; CI (`catalog.yml`) fails if they are
 stale or orphaned. The catalog is public — public projects and public metadata
 only.
 

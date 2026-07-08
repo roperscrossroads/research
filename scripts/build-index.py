@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(ROOT, "INDEX.md")
 
 # Directories and files that are never reports.
-SKIP_DIRS = {".git", ".github", "scripts", "templates", "catalog", "awesome"}
+SKIP_DIRS = {".git", ".github", "scripts", "templates", "catalog", "categories"}
 SKIP_FILES = {"README.md", "INDEX.md", "AGENTS.md"}
 
 def _plural(n, singular, plural):
